@@ -1,0 +1,50 @@
+# Redrob Hackathon submission metadata for HireSense AI.
+# Replace placeholder identity/repository fields before uploading.
+
+team_name: "hiresense-ai"
+
+primary_contact:
+  name: "Full Name"
+  email: "primary@example.com"
+  phone: "+91-XXXXXXXXXX"
+
+team_members:
+  - name: "Full Name"
+    email: "primary@example.com"
+    role: "ML Engineer"
+
+github_repo: "https://github.com/YOUR_USERNAME/YOUR_REPO"
+sandbox_link: "https://huggingface.co/spaces/YOUR_USERNAME/hiresense-ai"
+reproduce_command: "python rank.py --candidates ./candidates.jsonl --out ./submission.csv"
+
+compute:
+  platform: "Local CPU"
+  cpu_cores: 8
+  ram_gb: 16
+  python_version: "3.12"
+  os: "Windows"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: false
+  pre_computation_time_minutes: 0
+
+ai_tools_used:
+  - "ChatGPT"
+
+ai_usage_summary: |
+  Used AI assistance for implementation support and refactoring. No hosted LLM
+  calls are made during candidate ranking.
+
+methodology_summary: |
+  Deterministic CPU-only ranker over official nested candidate profiles.
+  Scores combine applied ML/search career evidence, verified skill strength,
+  product-company fit, experience band fit, Redrob availability signals,
+  location/logistics, and risk penalties for keyword-stuffed or suspicious
+  profiles. The output command writes the exact official CSV schema.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
