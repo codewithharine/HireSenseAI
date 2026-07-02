@@ -90,28 +90,37 @@ Example `/rank` body:
 
 ```text
 HireSenseAI/
-  app.py
-  main.py
-  requirements.txt
-  README.md
-  .env.example
-  data/
-    candidates.csv
-    jobs.csv
-  models/
-  services/
-    embedding_service.py
-    ranking_service.py
-    preprocessing.py
-    scoring.py
-    explainability.py
-  api/
-    routes.py
-  utils/
-    config.py
-  output/
-  tests/
-  assets/
+│
+├── app.py
+├── main.py
+├── requirements.txt
+├── README.md
+├── .env.example
+│
+├── data/
+│   ├── candidates.csv
+│   └── jobs.csv
+│
+├── models/
+│
+├── services/
+│   ├── embedding_service.py
+│   ├── ranking_service.py
+│   ├── preprocessing.py
+│   ├── scoring.py
+│   └── explainability.py
+│
+├── api/
+│   └── routes.py
+│
+├── utils/
+│   └── config.py
+│
+├── output/
+│
+├── tests/
+│
+└── assets/
 ```
 
 ## Configuration
